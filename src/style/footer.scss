@@ -1,0 +1,140 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #111111;
+    padding: 7.78vw 0;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        :nth-child(1) {
+            color: #FFFFFF;
+            font-size: 3.34vmax;
+            line-height: 3.958vmax;
+        }
+
+        :nth-child(2) {
+            color: #FCB500;
+            font-size: 3.34vmax;
+            line-height: 3.958vmax;
+        }
+    }
+
+    .price {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 32px;
+        font-weight: 400;
+        margin: 85px 0 59px 0;
+
+        :nth-child(1) {
+            text-decoration-line: line-through;
+            color: #ADADAD;
+            font-size: 3.34vmax;
+            line-height: 3.958vmax;
+        }
+
+        :nth-child(2) {
+            color: #FFFFFF;
+            font-size: 3vmax;
+            line-height: 3.958vmax;
+        }
+    }
+
+    .container-svg {
+        display: grid;
+        grid-template-columns: auto 2fr auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 75.486vw;
+
+        .item_blok {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #fff;
+
+            .horseradish {
+                margin-bottom: 5.42vw;
+                max-width: 14vw;
+                width: 13.4vw;
+                height: 11.7vw;
+            }
+
+            .tablets {
+                margin-bottom: 3.125vw;
+                max-width: 33vw;
+                width: 33.3vw;
+                height: 11.7vw;
+            }
+
+            .covid {
+                margin-bottom: 5.42vw;
+                max-width: 14vw;
+                width: 13.4vw;
+                height: 11.7vw;
+            }
+
+            h3 {
+                min-width: 163px;
+                font-size: 2.5vmax;
+                line-height: 2.986vmax;
+            }
+
+            h2.text_yellow {
+                margin: 8px 0 4.44vw 0;
+                font-size: 1.67vmax;
+                line-height: 1.944vmax;
+            }
+
+            .text_yellow {
+                color: #FCB500;
+            }
+
+            button {
+                background: #FCB500;
+                border-radius: 7px;
+                font-weight: 400;
+                font-size: 1.25vmax;
+                line-height: 1.458vmax;
+                padding: 1.31vw 5vw;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    .footer {
+        .container-svg {
+            grid-template-columns: auto auto;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+    .footer {
+        .container-svg {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            gap: 20px;
+
+            .item_blok {
+                justify-content: center;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100vw;
+    background: #000;
+    z-index: 2;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 4vmax 0 5.5vmax;
+
+        .nootris {
+            width: 7.5vw;
+        }
+
+        .shoppingBag {
+            width: 2.5vw;
+        }
+
+        .tools {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 6.5vw;
+            width: 100%;
+            height: 100%;
+            font-weight: 400;
+            font-size: 1.25vmax;
+            line-height: 1.667vmax;
+            color: #FFFFFF;
+            list-style-type: none;
+            gap: 2.7vw;
+
+            li {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
